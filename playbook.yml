@@ -1,0 +1,12 @@
+---
+- hosts: localhost  # This playbook will be run on the localhost.
+
+  tasks:  # This section is for tasks that will be run on the hosts.
+    - name: Run main tasks  # This is a placeholder for your tasks. Replace '# Your tasks here' with your actual tasks.
+
+  roles:  # This section is for roles that will be applied to the hosts.
+    - docker_install  # This role will install Docker on the hosts.
+    - network_create  # This role will create a network on the hosts.
+    - database_launch  # This role will launch a database on the hosts.
+    - app_launch  # This role will launch an application on the hosts.
+    - proxy_launch  # This role will launch a proxy on the hosts.
